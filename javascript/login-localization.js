@@ -8,5 +8,13 @@ $(document).ready(function () {
 
     $("#login-btn").html("تسجيل الدخول");
     $("#forgot-label").html("هل نسيت كلمة المرور ؟");
+
+    $("#username-field-cont .invalid-feedback").html(
+      "من فضلك ادخل اسم مستخدم صحيح."
+    );
+
+    $("#password-field-cont .invalid-feedback").html(
+      "من فضلك ادخل كلمة المرور."
+    );
   }
 });

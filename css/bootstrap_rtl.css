@@ -379,7 +379,8 @@ h4 {
 }
 
 p,
-li {
+li,
+div {
   direction: rtl;
   text-align: right;
 }

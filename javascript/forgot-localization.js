@@ -11,5 +11,9 @@ $(document).ready(function () {
 
     $("#submit-btn-cont").removeAttr("style");
     $("#submit-btn-cont").css("margin-right", "auto");
+
+    $("#username-field-cont .invalid-feedback").html(
+      "من فضلك ادخل اسم مستخدم صحيح."
+    );
   }
 });
