@@ -24,5 +24,6 @@ $(document).ready(function () {
         "sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe",
       crossorigin: "anonymous",
     });
+    $("body").show();
   }
 });

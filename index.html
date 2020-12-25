@@ -149,6 +149,13 @@
       &#169; Copyright 2020 ADCB, All Rights Reserved.
     </footer>
     <!-- End Footer -->
+
+    <script>
+      if (localStorage.getItem("localization") === "AR") {
+        document.getElementsByTagName("body")[0].style.display = "none";
+      }
+    </script>
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
