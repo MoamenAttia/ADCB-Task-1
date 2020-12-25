@@ -19,7 +19,9 @@
 
     <link rel="icon" type="image/png" href="images/logo.svg" />
 
+    <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login.css" />
     <title>ADCB | Login</title>
   </head>
   <body>
@@ -74,40 +76,45 @@
 
     <!-- End of Navbar Section -->
 
-    <!-- Start of Login Section -->
+    <section class="main-section">
+      <!-- Start of Login Section -->
 
-    <section class="login-section">
-      <form class="login-card">
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input
-            type="email"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            placeholder="Enter email"
-          />
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input
-            type="password"
-            class="form-control"
-            id="exampleInputPassword1"
-            placeholder="Password"
-          />
-        </div>
-        <button type="submit" class="btn btn-primary btn-block">Log In</button>
-        <div class="forgot-password">
-          <a
-            href="https://www.facebook.com/recover/initiate/?ars=facebook_login&amp;privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjA4ODg1NTI5LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D"
-            >Forgotten password?</a
-          >
-        </div>
-      </form>
+      <section class="login-section">
+        <form class="login-card needs-validation" novalidate>
+          <div class="form-group">
+            <label for="usernameInput">Username</label>
+            <input
+              type="text"
+              class="form-control"
+              id="usernameInput"
+              placeholder="Enter Username"
+              pattern="^[a-zA-Z0-9]+([_ -]?[a-zA-Z0-9])*$"
+              required
+            />
+            <div class="invalid-feedback">Please enter a valid username.</div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+              placeholder="Password"
+              required
+            />
+            <div class="invalid-feedback">The password field is required.</div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            Log In
+          </button>
+          <div class="forgot-password">
+            <a href="./forgot.html">Forgotten password?</a>
+          </div>
+        </form>
+      </section>
+
+      <!-- End of Login Section -->
     </section>
-
-    <!-- End of Login Section -->
 
     <!-- Start Footer -->
     <footer class="footer">
@@ -129,6 +136,36 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="javascript/scripts.js"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        "use strict";
+        window.addEventListener(
+          "load",
+          function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName("needs-validation");
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(
+              forms,
+              function (form) {
+                form.addEventListener(
+                  "submit",
+                  function (event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add("was-validated");
+                  },
+                  false
+                );
+              }
+            );
+          },
+          false
+        );
+      })();
+    </script>
   </body>
 </html>
