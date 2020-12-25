@@ -6,11 +6,16 @@
   width: 60px;
 }
 
+.nav-link {
+  margin-right: 2rem;
+  font-size: 1.4rem;
+}
+
 .lang-menu {
   text-align: right;
   font-weight: bold;
   position: relative;
-  padding: 0.2rem 0rem;
+  padding: 0.56rem 0rem;
 }
 
 @media (min-width: 992px) {
