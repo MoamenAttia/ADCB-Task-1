@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/login.css" />
+
     <title>ADCB | Login</title>
   </head>
   <body>
@@ -46,12 +47,17 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="./security-tips.html" target="_blank"
+            <a
+              id="security-tip-nav"
+              class="nav-link"
+              href="./security-tips.html"
+              target="_blank"
               >Security Tips</a
             >
           </li>
           <li class="nav-item">
             <a
+              id="login-guide-nav"
               class="nav-link"
               href="https://online.adcb.com.eg/T001/ADCBOnline/Manuals/First%20Login%20(V1)%20Eng.pdf"
               target="_blank"
@@ -60,6 +66,7 @@
           </li>
           <li class="nav-item">
             <a
+              id="token-guide-nav"
               class="nav-link"
               href="https://online.adcb.com.eg/T001/ADCBOnline/Manuals/TokenGuideEn.pdf"
               target="_blank"
@@ -67,17 +74,21 @@
             >
           </li>
           <li class="nav-item">
-            <span class="nav-link">Call us 16862</span>
+            <span id="call-us-nav" class="nav-link">Call us 16862</span>
           </li>
           <li class="nav-item">
             <div class="lang-menu">
               <div class="selected-lang">English</div>
               <ul>
                 <li>
-                  <a href="" class="en">English</a>
+                  <a href="#" onclick="onLocalization('EN');" class="en"
+                    >English</a
+                  >
                 </li>
                 <li>
-                  <a href="" class="ar">Arabic</a>
+                  <a href="#" onclick="onLocalization('AR');" class="ar"
+                    >العربية</a
+                  >
                 </li>
               </ul>
             </div>
@@ -93,7 +104,7 @@
       <section class="login-section">
         <form class="login-card needs-validation" novalidate>
           <div class="form-group">
-            <label for="usernameInput">Username</label>
+            <label id="usernameLabel" for="usernameInput">Username</label>
             <input
               type="text"
               class="form-control"
@@ -105,7 +116,9 @@
             <div class="invalid-feedback">Please enter a valid username.</div>
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
+            <label id="passwordLabel" for="exampleInputPassword1"
+              >Password</label
+            >
             <input
               type="password"
               class="form-control"
@@ -115,11 +128,15 @@
             />
             <div class="invalid-feedback">The password field is required.</div>
           </div>
-          <button type="submit" class="btn btn-primary btn-block">
+          <button
+            id="login-btn"
+            type="submit"
+            class="btn btn-primary btn-block"
+          >
             Log In
           </button>
           <div class="forgot-password">
-            <a href="./forgot.html">Forgotten password?</a>
+            <a id="forgot-label" href="./forgot.html">Forgotten password?</a>
           </div>
         </form>
       </section>
@@ -178,5 +195,7 @@
         );
       })();
     </script>
+    <script src="./javascript/navbar-localization.js"></script>
+    <script src="./javascript/login-localization.js"></script>
   </body>
 </html>

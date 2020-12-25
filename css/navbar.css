@@ -74,6 +74,10 @@
   background-color: #f2f2f2;
 }
 
+.lang-menu ul li a {
+  width: 115px;
+}
+
 .lang-menu ul li a:before {
   content: "";
   display: inline-block;

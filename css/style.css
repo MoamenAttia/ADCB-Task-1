@@ -12,7 +12,13 @@ body {
   justify-content: center;
   align-items: center;
   height: 4rem;
+  padding: 5px;
   font-size: 1.3rem;
   text-align: center;
   margin-top: auto;
+}
+
+.ml-auto,
+.mx-auto {
+  margin-right: 0 !important;
 }
