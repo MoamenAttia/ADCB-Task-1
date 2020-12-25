@@ -19,7 +19,7 @@ $(document).ready(function () {
     $("<link>").appendTo("head").attr({
       type: "text/css",
       rel: "stylesheet",
-      href: "../css/bootstrap_rtl.css",
+      href: "css/bootstrap_rtl.css",
       integrity:
         "sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe",
       crossorigin: "anonymous",
