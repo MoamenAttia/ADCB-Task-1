@@ -1,6 +1,7 @@
 .security-section {
   padding: 25px;
   background-color: #f8f9fa;
+  min-height: inherit;
 }
 
 .lead-normal {

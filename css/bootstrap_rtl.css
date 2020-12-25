@@ -356,7 +356,9 @@ body {
   list-style: none;
 }
 
-label {
+label,
+h3,
+h4 {
   display: block;
   text-align: right !important;
 }
@@ -374,4 +376,10 @@ label {
 
 .lang-menu .selected-lang:before {
   background-image: url(https://www.countryflags.io/ae/flat/32.png);
+}
+
+p,
+li {
+  direction: rtl;
+  text-align: right;
 }
