@@ -383,3 +383,15 @@ li {
   direction: rtl;
   text-align: right;
 }
+
+.nav-link {
+  margin-right: 0;
+}
+
+ul.navbar-nav {
+  padding: 0;
+}
+
+.lang-menu ul {
+  right: 0;
+}
