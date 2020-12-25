@@ -1,0 +1,38 @@
+.login-section {
+  background: url(../images/background-img.png);
+  background-size: cover;
+  background-position: center;
+  min-height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login-card {
+  border-radius: 1rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  padding: 2rem;
+  width: 396px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 396px) {
+  .login-card {
+    width: 320px;
+  }
+}
+
+.login-card label {
+  font-weight: 500;
+}
+
+.forgot-password {
+  margin-top: 1rem;
+  text-align: center;
+}
